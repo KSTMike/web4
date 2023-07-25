@@ -1,10 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
   <head>
     <title>HTMLタグ一覧</title>
     <meta charset="utf-8">
   </head>
   <body>
+    <div>
+      <a href="index.html">homeページ</a>
+      <a href="moby_dick.html">読書案内『Moby Dick』</a>
+      <a href="tags.html">HTMLタグ一覧</a>
+    </div>
+    
     <h1>重要なHTMLタグ一覧</h1>
 
     <a href="https://www.flickr.com/photos/jdhancock/3814523970">
@@ -30,7 +36,7 @@
         </tr>
         <tr>
           <td><code>h1</code>&ndash;<code>h6</code></td>
-          <td>見出し()heading</td>
+          <td>見出し（heading）</td>
           <td>この中に見出しを置く（レベル: 1&ndash;6）</td>
         </tr>
         <tr>
@@ -45,7 +51,7 @@
         </tr>
         <tr>
           <td><code>tr</code></td>
-          <td>表の行(table row)</td>
+          <td>表の行（table row）</td>
           <td>この中に行データを置く</td>
         </tr>
         <tr>
@@ -58,7 +64,33 @@
           <td>表のデータ（table data）</td>
           <td>この中に表のセルデータを置く</td>
         </tr>
+        <tr>
+          <td><code>header</code></td>
+          <td>画面全体の見出し（header）</td>
+          <td>この要素のコンテンツは見出しを表す</td>
+        </tr>
+        <tr>
+          <td><code>div</code></td>
+          <td>汎用的なグルーピング（div）</td>
+          <td>一まとめにする（幅や余白も指定可能）</td>
+        </tr>
+        <tr>
+          <td><code>ol</code></td>
+          <td>順序あるリスト（ol）</td>
+          <td>優先順位のあるリストにする</td>
+        </tr>
+        <tr>
+          <td><code>ul</code></td>
+          <td>順不同リスト（ul）</td>
+          <td>箇条書きリストにする</td>
+        </tr>
+        <tr>
+          <td><code>li</code></td>
+          <td>リスト項目（li）</td>
+          <td>リスト項目を作る</td>
+        </tr> 
       </table>
+
     <h2>インライン要素(inline element)</h2>
 
       <table>
@@ -83,30 +115,56 @@
           <td>
             <code>&lt;strong&gt;少なくとも10億人&lt;/strong&gt;</code>
           </td>
-          <td>（自分で埋めてください）</td>
+          <td><strong>少なくとも10億人</strong></td>
         </tr>
-        <tr>
-          <td><code>a</code></td>
-          <td>アンカー（anchor）</td>
-          <td>ハイパーリンクにする</td>
-          <td>
+      <tr>
+        <td><code>a</code></td>
+        <td>アンカー（anchor）</td>
+        <td>ハイパーリンクにする</td>
+        <td>
+          <code>
+            &lt;a href="https://learnenough.com/"&gt;Learn Enough&lt;/a&gt;
+          </code>
+        </td>
+        <td><a href="https://learnenough.com"</a>learnenough</td>
+      </tr>
+      <tr>
+        <td><code>img</code></td>
+        <td>画像(image)</td>
+        <td>画像を配置する</td>
+        <td>
+          <code>
+            &lt;img src="https://bit.ly/1MZAFuQ" alt="Michael Hartl"&gt;
+          </code>
+        </td>
+        <td><img src="https://bit.ly/1MZAFuQ" alt="Michael Hartl"></td>
+      </tr>
+      <tr>
+        <td><code>code</code></td>
+        <td>コード（code）</td>
+        <td>コードを表示する</td>
+        <td>
+          <pre>
             <code>
-              &lt;a href="https://leanenough.com/"&gt:Learn Enough&lt;/a&gt;
+              &lt;code&gt;&amp;gt;&amp;lt;mark&amp;gt;共通言語&amp;lt;/mark&amp;gt;&amp;lt;&lt;/code&gt;
             </code>
-          </td>
-          <td>（自分で埋めてください）</td>
-        </tr>
-        <tr>
-          <td><code>img</code></td>
-          <td>画像(image)</td>
-          <td>画像を配置する</td>
-          <td>
-            <code>
-              &lt;img src="https://bit.ly/1MZAFuQ" alt="Michael Hartl"&gt;
-            </code>
-          </td>
-          <td>（自分で埋めてください）</td>
-        </tr>
+          </pre>
+        </td>
+        <td>
+          <code>&lt;mark&gt;共通言語&lt;/mark&gt;</code>
+        </td>
+      </tr>
+      <tr>
+        <td><code>span</code></td>
+        <td>スパン(span)</td>
+        <td>文章の中で囲った部分だけをグループ化</td>
+        <td>
+          <code>
+            &lt;span&gt;Railsチュートリアル&lt;/span&gt;
+          </code>
+        </td>
+        <td><span>Railsチュートリアル</span></td>
+      </tr>
       </table>
   </body>
 </html>

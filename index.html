@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="ja">
   <head>
-    <title>Railsチュートリアル「HTML編」</title>
     <meta charset="utf-8">
+    <title>Railsチュートリアル「HTML編」</title>
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
     <div id="main-nav" class="nav-menu">
-      <a href="index.html">homeページ</a>
+      <a href="index.html" class="nav-menu">homeページ</a>
       <a href="tags.html" class="nav-spacing">HTMLタグ一覧</a>
       <a href="moby_dick.html" class="nav-spacing">読書案内『Moby_Dick』</a>
     </div>
@@ -16,15 +16,22 @@
         『Learn Enough to Be Dangerous』は、技術の成熟（<em>technical sophistication</em>）を世に広める運動のリーダーです。技術の成熟とは、コマンドを魔法のように操ってコンピュータを自在に使いこなすスキルのことです。技術の成熟には、コマンドライン、コーディング、キーボードショートカットの推測、エラーメッセージのググり方、行き詰まったら再起動すべきかどうかの判断など、あらゆるスキルが含まれます。技術の成熟を身につければ、全世界で<strong><em>少なくとも10億人</em></strong>が計り知れない恩恵を受けられると私たちは確信しています。この運動に参加したい方は、今すぐ<a href="https://Learnenough.com/email">公式メーリングリストにサインアップをお願いします</a>。
       </p>
 
-      <p>
-        <a href="https://twitter.com/RailsTutorialJP" target="_blank"
-        rel="noopener" style="text-decoration: none;">
-          <img src="images/small_twitter_logo.png">
-        </a>
-        RailsチュートリアルのTwitterフォローをお願いします:
-        <a href="https://twitter.com/RailsTutorialJP" target="_blank" rel="noopener">ここをクリック</a>。
-      </p>
-      
+      <style>
+        .image-link {
+          src: "images/small_twitter_logo.png";
+        }
+      </style>
+
+      <div class="image-link">
+        <p>
+          <a href="https://twitter.com/RailsTutorialJP" target="_blank" rel="noopener">
+            <img class="image-link">
+            <link rel="stylesheet" href="css/main.css">
+          </a>
+          RailsチュートリアルのTwitterフォローをお願いします:
+          <a href="https://twitter.com/RailsTutorialJP" target="_blank" rel="noopener">ここをクリック</a>。
+        </p>
+      </div>
       <p>
         ßHTMLは、初代Web「開発者」であるコンピューター科学者<a href="https://ja.wikipedia.org/wiki
         %E3%83%86%E3%82%A3%E3%83%A0%E3%83%BB%E3%83%90%E3%83%BC%E3%83%8A%E3%83%BC%E3%82%BA%EF
@@ -52,7 +59,7 @@
         その他のチュートリアル情報にご興味のある方は、<a href="https://railstutorial.jp/path">コンテンツ一覧</a>をどうぞご覧ください。
       </p>
 
-    <h2>創立メンバー</h2>
+    <h2><a name="founders" id="founders">創立メンバー</h2>
 
       <p>
         『Learn Enough to Be Dangerous』は2015年にマイケル・ハートル、リー・ドナヒュー、ニック・メルウィンの

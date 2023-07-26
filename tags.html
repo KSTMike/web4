@@ -5,12 +5,12 @@
     <meta charset="utf-8">
   </head>
   <body>
-    <div>
-      <a href="index.html">homeページ</a>
-      <a href="moby_dick.html">読書案内『Moby Dick』</a>
-      <a href="tags.html">HTMLタグ一覧</a>
+    <div style="text-align: right;">
+      <a href="index.html" style="text-decoration: none">homeページ</a>
+      <a href="tags.html" style="margin: 0 0 0 10px; text-decoration: none">HTMLタグ一覧</a>
+      <a href="moby_dick.html" style="margin-left: 10px; text-decoration: none">読書案内『Moby Dick』</a>
     </div>
-    
+
     <h1>重要なHTMLタグ一覧</h1>
 
     <a href="https://www.flickr.com/photos/jdhancock/3814523970">
@@ -31,33 +31,38 @@
         <tr>
           <th>HTMLタグ</th>
           <th>タグ名</th>
-          <th>記述例</th>
           <th>目的</th>
+          <th>記述例</th>
         </tr>
         <tr>
           <td><code>h1</code>&ndash;<code>h6</code></td>
           <td>見出し（heading）</td>
           <td>この中に見出しを置く（レベル: 1&ndash;6）</td>
+          <td><code>&lt;h1&gt;&lt;/h1&gt;</code></td>
         </tr>
         <tr>
           <td><code>p</code></td>
           <td>段落（パラグラフ： paragraph）</td>
           <td>この中に文章を入れる</td>
+          <td><code>&lt;p&gt;&lt;/p&gt;</code></td>
         </tr>
         <tr>
           <td><code>table</code></td>
           <td>表（テーブル： table）</td>
           <td>この中に行データを置く</td>
+          <td><code>&lt;table&gt;&lt;/table&gt;</code></td>
         </tr>
         <tr>
           <td><code>tr</code></td>
           <td>表の行（table row）</td>
           <td>この中に行データを置く</td>
+          <td><code>&lt;tr&gt;&lt;/tr&gt;</code></td>
         </tr>
         <tr>
           <td><code>th</code></td>
           <td>表の見出し（table header）</td>
           <td>この中に表の見出しを置く</td>
+          <td><code>&lt;th&gt;&lt;/th&gt;</code></td>
         </tr>
         <tr>
           <td><code>td</code></td>
@@ -88,7 +93,12 @@
           <td><code>li</code></td>
           <td>リスト項目（li）</td>
           <td>リスト項目を作る</td>
-        </tr> 
+        </tr>
+        <tr>
+          <td><code>brockquote</code></td>
+          <td>ブロックォート（brockquote）</td>
+          <td>長文の引用・転載文であることを示す</td>
+        </tr>  
       </table>
 
     <h2>インライン要素(inline element)</h2>
@@ -165,6 +175,55 @@
         </td>
         <td><span>Railsチュートリアル</span></td>
       </tr>
+      <tr>
+        <td>style</td>
+        <td>スタイル(style)</td>
+        <td>head要素の中にスタイルシートを記述</td>
+        <td>
+          <code>
+            &lt;div style="text-align: right;"&gt;
+          </code>
+        </td>
+        <td><div style="text-align: right;"></td>
+      </tr>
+      </table>
+
+    <h2>ドキュメントタグ</h2>
+      <table>
+        <th>HTMLタグ</th>
+        <th>タグ名</th>
+        <th>目的</th>
+        <th>記述例</th>
+        <tr>
+          <td><code>html</code></td>
+          <td>エイチティーエムエル（html）</td>
+          <td>HTMLドキュメントである事の提示</td>
+          <td><code>&lt;html&gt&lt;/html&gt</code></td>
+        </tr>
+        <tr>
+          <td><code>head</code></td>
+          <td>ヘッド（head）</td>
+          <td>HTMLドキュメントの情報を書き込む</td>
+          <td><code>&lt;head&gt&lt;/head&gt</code></td>
+        </tr>
+        <tr>
+          <td><code>body</code></td>
+          <td>ボディ（body）</td>
+          <td>本文を書き込む</td>
+          <td><code>&lt;body&gt&lt;/body&gt</code></td>
+        </tr>
+        <tr>
+          <td><code>title</code></td>
+          <td>タイトル（title）</td>
+          <td>題名を書き込む</td>
+          <td><code>&lt;title&gt&lt;/title&gt</code></td>
+        </tr>
+        <tr>
+          <td><code>meta</code></td>
+          <td>メタ（meta）</td>
+          <td>Webサイトの情報を書き込む</td>
+          <td><code>&lt;meta charset="utf-8"&gt;</code></td>
+        </tr>
       </table>
   </body>
 </html>
